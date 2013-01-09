@@ -1,0 +1,13 @@
+GET ALL
+
+[{"id":12,"firstname":"Simon","lastname":"Lait"},{"id":13,"firstname":"John","lastname":"Nash"}]
+
+
+GET SINGLE USER
+
+{"id":13,"firstname":"John","lastname":"Nash","age":45}
+
+POST NEW
+
+
+

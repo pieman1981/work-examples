@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^server/users/(.*)$ server/users.php?id=$1 [NC,L]
+RewriteRule ^server/users$ server/users.php [NC]
+
