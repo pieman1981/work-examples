@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title></title>
+ </head>
+
+ <body>
+  <div id="template-team">
+		{{#people}}
+		<div class="team">
+			<img src="images/{{image}}" alt="{{name}}" title="{{name}}" style="width:150px;" />
+			<img src="images/{{nationality}}.gif" alt="" title="" style="width:45px;float:left;padding-right:20px;" />
+			<h3 class="special">{{name}}</h3>
+			<div class="clearerl"></div>
+
+			<p><span class="strong">Likes:</span> {{likes}}</p>
+			<p><span class="strong">Dislikes:</span> {{dislikes}}</p>
+		</div>
+		{{/people}}
+  </div>
+ </body>
+</html>
