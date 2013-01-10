@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Simon Lait </title>
+
+ </head>
+
+ <body>
+  <!-- FROM https://github.com/thomasdavis/backbonetutorials/blob/gh-pages/videos/beginner/README.md -->
+  <h1>User Manager</h1>
+  <hr />
+
+  <div class="page"></div>
+
+  <script type="text/template" id="user-list-template">
+		<h4>Testing Template</h4>
+		<p>Variable 1 - <%= var1 %></p>
+		<p>Variable 2 - <%= var2 %></p>
+		
+  </script>
+
+  <script type="text/template" id="edit-user-template">
+		
+  </script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.3/underscore-min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.9/backbone-min.js"></script>
+
+  <script>
+
+
+		/*************** EEE GENERAL *************************/
+
+		var UserList = Backbone.View.extend({
+			el: '.page',
+
+			render: function() {
+				that = this;
+				$.get("server/calls.php", function(json){
+					var data = $.parseJSON(json);
+					//var data = eval( '(' + json + ')');
+
+					var template = _.template($('#user-list-template').html(),data);
+					that.$el.html(template);
+
+				});
+				
+			}
+		});
+
+		var userList = new UserList();
+
+		
+
+		var Router = Backbone.Router.extend({
+			routes: {
+				'': 'home',
+				'new': 'editUser',
+				'edit/:id': 'editUser'
+			}
+
+		});
+
+
+		var router = new Router();
+		router.on('route:home', function(id){
+			 userList.render();
+		});
+
+
+		Backbone.history.start();
+
+
+  </script>
+
+ </body>
+</html>
