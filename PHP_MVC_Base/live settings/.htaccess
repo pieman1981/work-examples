@@ -1,0 +1,10 @@
+php_flag display_errors off
+php_value error_reporting -1
+php_value include_path ".:/var/www/vhosts/xinsurance.com/httpdocs/utilities:/var/www/vhosts/xinsurance.com/httpdocs/mvc/controllers:/var/www/vhosts/xinsurance.com/httpdocs/mvc/views:/var/www/vhosts/xinsurance.com/httpdocs/mvc/templates:/var/www/vhosts/xinsurance.com/httpdocs/mvc/model"
+
+RewriteEngine On
+RewriteRule ^([a-z]+)/([a-z\?=0-9]+),([a-z\?=0-9&]+)$ index.php?a=$1&b=$2&c=$3 [NC]
+RewriteRule ^([a-z]+)/([a-z\?=0-9&]+)$ index.php?a=$1&b=$2 [NC]
+RewriteRule ^([a-z]+)$ index.php?a=$1 [NC]
+
+ErrorDocument 404 /index.php?a=NotFound

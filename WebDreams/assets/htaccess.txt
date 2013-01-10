@@ -1,0 +1,5 @@
+Options -Multiviews
+Options +FollowSymLinks
+RewriteEngine on
+rewritecond %{http_host} ^web-dreams.co.uk [nc]
+rewriterule ^(.*)$ http://www.web-dreams.co.uk/$1.php [r=301,nc]

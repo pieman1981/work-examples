@@ -1,0 +1,16 @@
+http://code.google.com/webfonts -google fonts api
+http://davidwalsh.name/cufon - cufon font replacement
+http://creativenerds.co.uk/tutorials/80-fresh-photoshop-tutorials-for-creating-awesome-websites/ - templates
+http://net.tutsplus.com/articles/web-roundups/40-invaluable-php-tutorials-and-resources/ - php resources
+http://www.webmaster-toolkit.com/mod_rewrite-rewriterule-generator.shtml - url rewriting rules
+http://dropshadow.webvex.limebits.com/ - jquery drop shadow
+http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-pure-css-reflections/ - css3 reflections
+http://net.tutsplus.com/tutorials/php/simple-php-class-based-querying/ - php class based query
+
+log file reader:
+webalizer
+analog
+webtrends
+a w stats
+http analyse
+
