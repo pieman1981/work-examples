@@ -1,0 +1,29 @@
+body {
+
+}
+.container {
+	width:1000px;
+	margin:0 auto;
+}
+
+header nav li {
+	display:inline;
+}
+
+header nav li a {
+	display:block;
+	float:left;
+	line-height:28px;
+	padding:0 10px;
+	text-align:center;
+	color:#7ba6c9;
+	font-weight:bold;
+	text-decoration:none;
+	border-right:1px solid #19194b;
+	font-size:110%;
+}
+
+header nav li a:hover {
+	color:#fff;
+}
+
