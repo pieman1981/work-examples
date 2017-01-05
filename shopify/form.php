@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
 
   <body>
 
-    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <nav class="navbar navbar-dark bg-inverse">
       <a class="navbar-brand" href="#">Simon Lait</a>
       <ul class="nav navbar-nav">
         <li class="nav-item active">

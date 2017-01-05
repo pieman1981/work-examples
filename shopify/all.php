@@ -22,7 +22,7 @@ $products = $Shopify->get_products();
 
   <body>
 
-    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+    <nav class="navbar navbar-dark bg-inverse">
       <a class="navbar-brand" href="#">Simon Lait</a>
       <ul class="nav navbar-nav">
         <li class="nav-item">
@@ -37,6 +37,7 @@ $products = $Shopify->get_products();
     <div class="container">
 
         <h1>All Products</h1>
+        <p class="lead">All products in the shopify store</p>
 
         <table class="table">
             <tr>
