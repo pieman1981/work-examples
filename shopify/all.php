@@ -38,6 +38,8 @@ $products = $Shopify->get_products();
 
         <h1>All Products</h1>
         <p class="lead">All products in the shopify store</p>
+        
+        <a href="form.php" class="btn btn-primary">Add New Product</a>
 
         <table class="table">
             <tr>
